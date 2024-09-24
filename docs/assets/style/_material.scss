@@ -1,0 +1,95 @@
+// stper
+.mat-stepper-horizontal,
+.mat-stepper-vertical {
+  background-color: initial;
+  padding: 25px;
+  overflow: hidden;
+}
+
+.mat-stper-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+// card
+.card-box {
+  width: 928px;
+  min-height: 560px;
+  max-width: 100%;
+  padding: 40px 80px 120px 80px !important;
+  margin: 0 auto;
+  @include prefix(box-shadow, 0px 5px 21px rgba(0, 0, 0, 0.07) !important);
+  @include prefix(border-radius, 0 !important);
+}
+
+.card-preview-box {
+  @extend .card-box;
+  padding: 40px !important;
+}
+
+.card-confirm-box {
+  @extend .card-box;
+  min-height: initial;
+  padding: 40px !important;
+}
+
+.mat-form-field-outline {
+  color: #666666 !important;
+}
+// to change label color
+ .mat-form-field-label {
+  color: #666666 !important;
+}
+
+.mat-focused{
+
+  .mat-form-field-outline {
+   color: $primary !important;
+ }
+ // to change label color
+  .mat-form-field-label {
+   color: $primary !important;
+ }
+}
+.mat-card-title {
+  font-size: 24px;
+  font-weight: 400;
+  color: #000000;
+  margin-bottom: 30px !important;
+}
+
+// radio
+.mat-radio-button {
+  margin-left: 0 !important;
+  margin-right: 16px;
+}
+
+.mat-radio-label-content {
+  color: $secondary;
+  white-space: normal;
+}
+
+.desc-title {
+  color: $secondary;
+  margin-bottom: 12px;
+}
+
+.desc-sub-title {
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.mat-checkbox-frame{
+  border-width: 1px !important;
+  border-color: #D4DBDC;
+}
+
+.mat-error {
+  &.radio-error {
+    font-size: 75%;
+    margin-left: 11px;
+    margin-top: 5px;
+  }
+}

@@ -1,0 +1,109 @@
+@import "variable";
+@import "mixin";
+
+.menu-btn{
+  //padding: 10px 20px;
+  border: none;
+  max-width: 150px;
+  width: auto;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFFFFF;
+  // border: 1px solid #B4C0C3;
+  @include prefix(border-radius , 20px);
+  font-weight: $medium;
+  font-size: 14px;
+  color: #333333;
+}
+i{
+  margin-right: 13px;
+  display: inline-block;
+}
+
+.cdk-overlay-container {
+  .cdk-overlay-connected-position-bounding-box + .cdk-overlay-connected-position-bounding-box{
+    height: 100% !important;
+    >{
+      .cdk-overlay-pane{
+        // width: 100%;
+        >{
+          .mat-menu-panel{
+            max-height:100% !important;
+            min-height: 100% !important;
+            min-width: 256px !important;
+            >
+            {
+              .mat-menu-content{
+                .mat-menu-item{
+                  height: auto !important;
+                  line-height: 0 !important;
+                  padding: 0 !important;
+                  &:hover{
+                    background: transparent !important;
+                    color: #666666 !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.mat-menu-item-submenu-trigger{
+  padding-right: 16px !important;
+}
+.mat-menu-submenu-icon{
+  display: none;
+}
+.mat-menu-item{
+  i{
+    display: inline-block;
+    line-height: 1;
+    margin-left: 20px;
+    svg{
+      path{
+        fill: rgba(0, 0, 0, 0.6);
+      }
+    }
+  }
+  &:hover{
+    background: $primary !important;
+    color: $white;
+    i{
+      svg{
+        path{
+          fill: $white;
+        }
+      }
+    }
+  }
+}
+
+.mat-menu-content {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+
+.mat-menu-item{
+  line-height:35px;
+  height:35px;
+  padding: 0 15px;
+}
+.mat-calendar-table-header-divider::after{
+  display: none !important;
+}
+.mat-calendar-body-cell:not(.mat-calendar-body-disabled):hover > .mat-calendar-body-cell-content:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical){
+  background-color: $primary;
+  color: $white;
+}
+.mat-calendar-body-today:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical){
+  border-color: $primary;
+}
+.mat-calendar-body-selected{
+  background-color: $primary !important;
+  color: $white !important;
+}
