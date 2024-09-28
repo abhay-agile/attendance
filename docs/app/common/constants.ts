@@ -7,7 +7,7 @@ export const userData: IUserData[] = [
     email: 'abhay@yopmail.com',
     password: 'Abhay@001',
     image: 'assets/images/abhay.png',
-    seteled: 0
+    seteled: 3
   },
   {
     id: '2',
@@ -15,7 +15,7 @@ export const userData: IUserData[] = [
     email: 'tarak@yopmail.com',
     password: 'Tarak@001',
     image: 'assets/images/tarak.png',
-    seteled: 0
+    seteled: 4
   },
   {
     id: '3',
@@ -39,7 +39,7 @@ export const userData: IUserData[] = [
     email: 'vaibhavi@yopmail.com',
     password: 'Vaibhavi@001',
     image: 'assets/images/vaibhavi.png',
-    seteled: 0
+    seteled: 3
   },
   {
     id: '6',
